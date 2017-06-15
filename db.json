@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Coca",
+      "price": 1,
+      "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+    },
+    {
+      "id": 2,
+      "name": "Ice tea",
+      "price": 1.5,
+      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Red bull",
+      "price": 2.5,
+      "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
+    }
+  ],
+  "orders": [
+    {
+      "productOrders": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Coca",
+            "price": 1,
+            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "Ice tea",
+            "price": 1.5,
+            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 3,
+            "name": "Red bull",
+            "price": 2.5,
+            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
+          },
+          "quantity": 0
+        }
+      ],
+      "id": 1
+    },
+    {
+      "productOrders": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Coca",
+            "price": 1,
+            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "Ice tea",
+            "price": 1.5,
+            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+          },
+          "quantity": 6
+        },
+        {
+          "product": {
+            "id": 3,
+            "name": "Red bull",
+            "price": 2.5,
+            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
+          },
+          "quantity": 3
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

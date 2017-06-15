@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -9,21 +9,30 @@ import { ProductsComponent } from './products/products.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import {ProductService} from './product.service';
+import { OrderComponent } from './order/order.component';
+import { MorelessComponent } from './moreless/moreless.component';
+import {OrderService} from './order.service';
+import { ProductOrderComponent } from './product-order/product-order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    ProductsComponent
+    ProductsComponent,
+    OrderComponent,
+    MorelessComponent,
+    ProductOrderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES),
+    ReactiveFormsModule,
   ],
   providers: [
-      ProductService
+      ProductService,
+      OrderService
   ],
   bootstrap: [AppComponent]
 })

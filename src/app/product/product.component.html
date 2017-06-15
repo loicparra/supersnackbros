@@ -1,4 +1,10 @@
-<div>
-  <div>{{ product.name }}</div>
-  <div>{{ product.price }}</div>
+<div class="card">
+    <img class="card-img embed-responsive product-image" src="{{ product.image }}">
+    <div class="card-img-overlay">
+        <div>
+            <span class="product-badge badge badge-success">{{ product.name }}</span>
+            <span class="product-badge badge badge-info">{{ product.price }} €</span>
+        </div>
+        <ssb-moreless [moreless]="order"></ssb-moreless>
+    </div>
 </div>

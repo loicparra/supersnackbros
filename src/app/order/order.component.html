@@ -1,0 +1,11 @@
+<div>
+  <div *ngFor="let productOrder of order.productOrders">
+    <div *ngIf="productOrder.quantity != 0">
+      <ssb-product-order [productOrder]="productOrder"></ssb-product-order>
+    </div>
+  </div>
+  <div>
+    Total : {{ order.total() }}
+  </div>
+  <button type="button" (click)="add()">Commander !</button>
+</div>
