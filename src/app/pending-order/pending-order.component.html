@@ -1,0 +1,5 @@
+<ssb-order [order]="order"></ssb-order>
+<div>
+  {{ order.date | date: 'dd/MM/yyyy hh:mm' }}
+</div>
+<button type="button" (click)="validate()">Valider la commande</button>

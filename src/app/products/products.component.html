@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-12">
     <div class="row">
-      <div class="col-md-4" *ngFor="let productOrder of order.productOrders">
-        <ssb-product [product]="productOrder.product" [order]="productOrder"></ssb-product>
+      <div class="col-md-2" *ngFor="let product of products">
+        <ssb-product (decrementProduct)="removeFromOrder($event)" (incrementProduct)="addToOrder($event)" [product]="product"></ssb-product>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <ssb-order [order]="order"></ssb-order>
+  <div class="col-md-12">
+    <ssb-current-order [order]="order"></ssb-current-order>
   </div>
 </div>

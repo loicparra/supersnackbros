@@ -1,0 +1,3 @@
+<div *ngFor="let order of orders">
+  <ssb-pending-order (validation)="validateOrder($event)" [order]="order"></ssb-pending-order>
+</div>

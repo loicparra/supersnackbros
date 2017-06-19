@@ -1,6 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from '../models/product.model';
-import {ProductOrder} from '../models/productOrder.model';
 
 @Component({
   selector: 'ssb-product',
@@ -11,10 +10,19 @@ import {ProductOrder} from '../models/productOrder.model';
 
 export class ProductComponent implements OnInit {
   @Input() product: Product;
-  @Input() order: ProductOrder;
+  @Output() decrementProduct = new EventEmitter();
+  @Output() incrementProduct = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  decrement() {
+    this.decrementProduct.emit(this.product);
+  }
+
+  increment() {
+    this.incrementProduct.emit(this.product);
   }
 }

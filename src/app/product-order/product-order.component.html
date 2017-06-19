@@ -1,7 +1,9 @@
-<div class="media">
-  <img class="d-flex mr-3" src="{{ productOrder.product.image }}" alt="{{ productOrder.product.name }}">
-  <div class="media-body">
-    <h5 class="mt-0">{{ productOrder.product.name }}</h5>
-    {{ productOrder.quantity }}
+<div class="card d-inline-block mr-1">
+  <img class="card-img embed-responsive product-image" src="{{ productOrder.product.image }}">
+  <div class="card-img-overlay p-0">
+    <div>
+      <span class="product-badge badge badge-info quantity">{{ productOrder.quantity }}</span>
+      <span class="product-badge badge badge-success">{{ productOrder.product.name }}</span>
+    </div>
   </div>
 </div>

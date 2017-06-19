@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Order} from '../models/order.model';
-import {OrderService} from '../order.service';
 
 @Component({
   selector: 'ssb-order',
@@ -9,15 +8,15 @@ import {OrderService} from '../order.service';
 })
 export class OrderComponent implements OnInit {
   @Input() order: Order;
-  constructor(private _orderService: OrderService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  add() {
-    if (this.order.isValid()) {
-      this._orderService.addOrder(this.order);
-    }
-  }
+  total() {
+    let total = 0;
+    this.order.productOrders.forEach(po => total += po.quantity * po.product.price);
 
+    return total;
+  }
 }

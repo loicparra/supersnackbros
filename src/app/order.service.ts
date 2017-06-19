@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Order} from './models/order.model';
 import {Http} from '@angular/http';
+import { Config } from './app.config';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
@@ -10,16 +11,21 @@ export class OrderService {
 
   constructor(private _http: Http) { }
 
-  list(): Observable<Order[]> {
+  list(params): Observable<Order[]> {
     return this._http
-        .get('http://localhost:3000/orders')
-        .map(res => { return res.json(); });
+        .get(Config.api_url + '/orders', {'params': params})
+        .map(res => res.json());
   }
 
   addOrder(order: Order) {
     return this._http
-        .post('http://localhost:3000/orders', order)
+        .post(Config.api_url + '/orders', order)
         .toPromise()
-        .catch((err) => {console.log(err); return Promise.reject(err); });
+        .catch((err) => Promise.reject(err));
+  }
+
+  setToFinished(order: Order) {
+    return this._http
+        .patch(Config.api_url + '/orders/' + order.id, {'status' : 1});
   }
 }

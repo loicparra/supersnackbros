@@ -1,6 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup, FormBuilder} from '@angular/forms';
-import {Moreless} from '../models/moreless.model';
 
 @Component({
   selector: 'ssb-moreless',
@@ -8,7 +7,8 @@ import {Moreless} from '../models/moreless.model';
   styleUrls: ['./moreless.component.css']
 })
 export class MorelessComponent implements OnInit {
-  @Input() moreless: Moreless;
+  @Output() increment = new EventEmitter();
+  @Output() decrement = new EventEmitter();
   form: FormGroup;
   lessCtrl: FormControl;
   moreCtrl: FormControl;
@@ -22,5 +22,12 @@ export class MorelessComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  more() {
+    this.increment.emit();
+  }
+  less() {
+    this.decrement.emit();
   }
 }
