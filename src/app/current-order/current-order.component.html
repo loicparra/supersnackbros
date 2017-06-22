@@ -1,2 +1,9 @@
-<ssb-order [order]="order"></ssb-order>
-<button type="button" (click)="add()">Commander !</button>
+<div class="row">
+    <div class="current-order col-md-12" [class.shown]="isValid()">
+        <h2 class="d-inline-block title">Je veux : </h2>
+        <ssb-order [order]="order"></ssb-order>
+        <div>
+            <button type="button" (click)="add()" class="btn btn-success btn-block"><i class="fa fa-check"></i> Commander !</button>
+        </div>
+    </div>
+</div>

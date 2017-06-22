@@ -1,6 +1,7 @@
-<div>
+<span>
   <ssb-product-order *ngFor="let productOrder of order.productOrders" [productOrder]="productOrder"></ssb-product-order>
-  <div>
-    Total : {{ total() }} €
-  </div>
-</div>
+  <span class="equal">=</span>
+  <span class="total badge badge-info">
+    {{ total()|number:'1.2-2'}} €
+  </span>
+</span>

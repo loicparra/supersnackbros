@@ -6,11 +6,11 @@ import 'rxjs/add/observable/interval';
 import {OrderStatus} from '../app.config';
 
 @Component({
-  selector: 'ssb-order-list',
-  templateUrl: './order-list.component.html',
-  styleUrls: ['./order-list.component.css']
+  selector: 'ssb-pending-orders-list',
+  templateUrl: './pending-orders.component.html',
+  styleUrls: ['./pending-orders.component.css']
 })
-export class OrderListComponent implements OnInit {
+export class PendingOrdersComponent implements OnInit {
   @Input() orders: Array<Order>;
   lastCheckedTimestamp: number;
   constructor(private _orderService: OrderService) {
@@ -51,5 +51,4 @@ export class OrderListComponent implements OnInit {
 
     return result;
   }
-
 }

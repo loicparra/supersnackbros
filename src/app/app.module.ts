@@ -12,9 +12,9 @@ import { OrderComponent } from './order/order.component';
 import { MorelessComponent } from './moreless/moreless.component';
 import {OrderService} from './order.service';
 import { ProductOrderComponent } from './product-order/product-order.component';
-import { OrderListComponent } from './order-list/order-list.component';
 import { CurrentOrderComponent } from './current-order/current-order.component';
 import { PendingOrderComponent } from './pending-order/pending-order.component';
+import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,9 @@ import { PendingOrderComponent } from './pending-order/pending-order.component';
     OrderComponent,
     MorelessComponent,
     ProductOrderComponent,
-    OrderListComponent,
     CurrentOrderComponent,
-    PendingOrderComponent
+    PendingOrderComponent,
+    PendingOrdersComponent
   ],
   imports: [
     BrowserModule,
