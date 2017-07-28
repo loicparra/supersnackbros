@@ -1,0 +1,4 @@
+<div *ngFor="let product of products">
+  <ssb-product-form [product]="product"></ssb-product-form>
+</div>
+<button class="btn btn-success" type="button" (click)="addProduct()">Ajouter un produit</button>

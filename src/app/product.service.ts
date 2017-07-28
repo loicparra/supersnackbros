@@ -16,4 +16,16 @@ export class ProductService {
         .map(res => res.json());
   }
 
+  updateProduct(product: Product) {
+    return this._http
+        .patch(Config.api_url + '/products/' + product.id, product)
+        .toPromise()
+        .catch((err) => Promise.reject(err));
+  }
+
+  addProduct(product: Product) {
+    return this._http
+        .post(Config.api_url + '/products', product);
+  }
+
 }

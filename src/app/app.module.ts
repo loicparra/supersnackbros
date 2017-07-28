@@ -15,6 +15,9 @@ import { ProductOrderComponent } from './product-order/product-order.component';
 import { CurrentOrderComponent } from './current-order/current-order.component';
 import { PendingOrderComponent } from './pending-order/pending-order.component';
 import { PendingOrdersComponent } from './pending-orders/pending-orders.component';
+import { HomeComponent } from './home/home.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductFormComponent } from './product-form/product-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { PendingOrdersComponent } from './pending-orders/pending-orders.componen
     ProductOrderComponent,
     CurrentOrderComponent,
     PendingOrderComponent,
-    PendingOrdersComponent
+    PendingOrdersComponent,
+    HomeComponent,
+    ProductsListComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,

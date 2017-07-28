@@ -4,200 +4,164 @@
       "id": 1,
       "name": "Coca",
       "price": 1,
-      "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+      "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png",
+      "stock": "147",
+      "totalPrice": "85.07"
     },
     {
       "id": 2,
       "name": "Ice tea",
-      "price": 1.5,
-      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+      "price": "1",
+      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
+      "stock": "126",
+      "totalPrice": "28.77"
     },
     {
       "id": 3,
+      "name": "Sprite",
+      "price": 1,
+      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
+      "stock": "144",
+      "totalPrice": "26.40"
+    },
+    {
+      "id": 4,
       "name": "Red bull",
-      "price": 2.5,
-      "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
+      "price": 2,
+      "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png",
+      "stock": "92",
+      "totalPrice": "51.8"
+    },
+    {
+      "id": 5,
+      "name": "Café",
+      "price": 0.5,
+      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
+      "stock": "100",
+      "totalPrice": "10.84"
+    },
+    {
+      "id": 6,
+      "name": "Kinder bueno",
+      "price": "1",
+      "image": "",
+      "stock": "252",
+      "totalPrice": "85.07"
+    },
+    {
+      "id": 7,
+      "name": "Kit Kat",
+      "price": "1",
+      "image": "",
+      "stock": "130",
+      "totalPrice": "29.25"
+    },
+    {
+      "id": 8,
+      "name": "Snickers ice cream",
+      "price": "1",
+      "image": "",
+      "stock": "126",
+      "totalPrice": "37.94"
+    },
+    {
+      "id": 9,
+      "name": "Pop corn (salt)",
+      "price": "0.5",
+      "image": "",
+      "stock": "0",
+      "totalPrice": 0
+    },
+    {
+      "id": 10,
+      "name": "Pop corn (sugar)",
+      "price": "0.5",
+      "image": "",
+      "stock": 0,
+      "totalPrice": 0
+    },
+    {
+      "id": 11,
+      "name": "Hotdog",
+      "price": "3",
+      "image": "",
+      "stock": 0,
+      "totalPrice": 0
+    },
+    {
+      "id": 12,
+      "name": "",
+      "price": 0,
+      "image": "",
+      "stock": 0,
+      "totalPrice": 0
+    },
+    {
+      "id": 13,
+      "name": "Pain au chocolat",
+      "price": "1",
+      "image": "",
+      "stock": 0,
+      "totalPrice": 0
     }
   ],
   "orders": [
     {
-      "id": 1497952916679,
+      "id": 1501202362400,
       "productOrders": [
         {
           "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1497952916679,
-      "status": 1
-    },
-    {
-      "id": 1497952924294,
-      "productOrders": [
-        {
-          "product": {
-            "id": 2,
-            "name": "Ice tea",
-            "price": 1.5,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1497952924294,
-      "status": 1
-    },
-    {
-      "id": 1497952966160,
-      "productOrders": [
-        {
-          "product": {
-            "id": 3,
-            "name": "Red bull",
-            "price": 2.5,
-            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
-          },
-          "quantity": 2
-        }
-      ],
-      "date": 1497952966160,
-      "status": 1
-    },
-    {
-      "id": 1497953043766,
-      "productOrders": [
-        {
-          "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+            "id": 7,
+            "name": "Kit Kat",
+            "price": "1",
+            "image": "",
+            "stock": "130",
+            "totalPrice": "29.25"
           },
           "quantity": 1
         },
         {
           "product": {
-            "id": 2,
-            "name": "Ice tea",
-            "price": 1.5,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+            "id": 6,
+            "name": "Kinder bueno",
+            "price": "1",
+            "image": "",
+            "stock": "252",
+            "totalPrice": "85.07"
           },
           "quantity": 1
         }
       ],
-      "date": 1497953043766,
-      "status": 1
-    },
-    {
-      "id": 1497953048399,
-      "productOrders": [
-        {
-          "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
-          },
-          "quantity": 2
-        },
-        {
-          "product": {
-            "id": 3,
-            "name": "Red bull",
-            "price": 2.5,
-            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1497953048399,
-      "status": 1
-    },
-    {
-      "id": 1497953169297,
-      "productOrders": [
-        {
-          "product": {
-            "id": 2,
-            "name": "Ice tea",
-            "price": 1.5,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1497953169297,
-      "status": 1
-    },
-    {
-      "id": 1497954809219,
-      "productOrders": [
-        {
-          "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1497954809219,
-      "status": 1
-    },
-    {
-      "id": 1498139718180,
-      "productOrders": [
-        {
-          "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
-          },
-          "quantity": 2
-        }
-      ],
-      "date": 1498139718180,
+      "date": 1501202362400,
       "status": 0
     },
     {
-      "id": 1498144367109,
+      "id": 1501202440261,
       "productOrders": [
         {
           "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png"
+            "id": 7,
+            "name": "Kit Kat",
+            "price": "1",
+            "image": "",
+            "stock": "130",
+            "totalPrice": "29.25"
           },
-          "quantity": 4
+          "quantity": 1
         },
         {
           "product": {
-            "id": 2,
-            "name": "Ice tea",
-            "price": 1.5,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg"
+            "id": 6,
+            "name": "Kinder bueno",
+            "price": "1",
+            "image": "",
+            "stock": "252",
+            "totalPrice": "85.07"
           },
-          "quantity": 2
-        },
-        {
-          "product": {
-            "id": 3,
-            "name": "Red bull",
-            "price": 2.5,
-            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png"
-          },
-          "quantity": 3
+          "quantity": 1
         }
       ],
-      "date": 1498144367109,
+      "date": 1501202440261,
       "status": 0
     }
   ]

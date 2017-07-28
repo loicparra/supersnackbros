@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-sm-12">
+    <label for="name-{{product.id}}">Nom</label>
+    <input id="name-{{product.id}}" class="form-control" type="text" (blur)="setName($event)" value="{{ product.name }}">
+  </div>
+
+  <div class="col-sm-4">
+    <label for="price-{{product.id}}">Prix</label>
+    <input id="price-{{product.id}}" class="form-control" type="text" (blur)="setPrice($event)" value="{{ product.price }}">
+  </div>
+
+  <div class="col-sm-4">
+    <label for="stock-{{product.id}}">Stock</label>
+    <input id="stock-{{product.id}}" class="form-control" type="text" (blur)="setStock($event)" value="{{ product.stock }}">
+  </div>
+
+  <div class="col-sm-4">
+    <label for="total-{{product.id}}">Prix d'achat total</label>
+    <input id="total-{{product.id}}" class="form-control" type="text" (blur)="setTotalPrice($event)" value="{{ product.totalPrice }}">
+  </div>
+
+  <button type="button" (click)="updateProduct()">
+    Sauvegarder
+  </button>
+</div>
