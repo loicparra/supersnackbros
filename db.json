@@ -106,6 +106,65 @@
     }
   ],
   "orders": [
-    
+    {
+      "id": 1,
+      "productOrders": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Coca",
+            "price": 1,
+            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png",
+            "stock": "147",
+            "totalPrice": "85.07"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 3,
+            "name": "Sprite",
+            "price": 1,
+            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
+            "stock": "144",
+            "totalPrice": "26.40"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 4,
+            "name": "Red bull",
+            "price": 2,
+            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png",
+            "stock": "92",
+            "totalPrice": "51.8"
+          },
+          "quantity": 2
+        }
+      ],
+      "date": 1501275100065,
+      "status": 0,
+      "place": "1"
+    },
+    {
+      "id": 2,
+      "productOrders": [
+        {
+          "product": {
+            "id": 5,
+            "name": "Café",
+            "price": 0.5,
+            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
+            "stock": "100",
+            "totalPrice": "10.84"
+          },
+          "quantity": 13
+        }
+      ],
+      "date": 1501275131165,
+      "status": 0,
+      "place": "5"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 export const Config = {
-    'api_url' : 'http://localhost:3000'
+    'api_url' : 'http://172.24.1.1:3000'
 };
 
 export const OrderStatus = {
