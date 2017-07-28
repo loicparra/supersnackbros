@@ -3,7 +3,7 @@
         <h2 class="d-inline-block title">Je veux : </h2>
         <ssb-order [order]="order"></ssb-order>
         <div>
-            <button type="button" (click)="add()" class="btn btn-success btn-block"><i class="fa fa-check"></i> Commander !</button>
+            <button [disabled]="isDisabled" type="button" (click)="add()" class="btn btn-success btn-block"><i class="fa fa-check"></i> Commander !</button>
         </div>
     </div>
 </div>

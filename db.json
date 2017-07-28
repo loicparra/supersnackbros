@@ -106,63 +106,6 @@
     }
   ],
   "orders": [
-    {
-      "id": 1501202362400,
-      "productOrders": [
-        {
-          "product": {
-            "id": 7,
-            "name": "Kit Kat",
-            "price": "1",
-            "image": "",
-            "stock": "130",
-            "totalPrice": "29.25"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 6,
-            "name": "Kinder bueno",
-            "price": "1",
-            "image": "",
-            "stock": "252",
-            "totalPrice": "85.07"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1501202362400,
-      "status": 0
-    },
-    {
-      "id": 1501202440261,
-      "productOrders": [
-        {
-          "product": {
-            "id": 7,
-            "name": "Kit Kat",
-            "price": "1",
-            "image": "",
-            "stock": "130",
-            "totalPrice": "29.25"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 6,
-            "name": "Kinder bueno",
-            "price": "1",
-            "image": "",
-            "stock": "252",
-            "totalPrice": "85.07"
-          },
-          "quantity": 1
-        }
-      ],
-      "date": 1501202440261,
-      "status": 0
-    }
+    
   ]
 }

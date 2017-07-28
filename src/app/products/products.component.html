@@ -7,4 +7,4 @@
     </div>
   </div>
 </div>
-<ssb-current-order [order]="order"></ssb-current-order>
+<ssb-current-order (orderDone)="resetOrder()" [order]="order"></ssb-current-order>

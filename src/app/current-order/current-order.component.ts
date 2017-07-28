@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Order} from '../models/order.model';
 import {OrderService} from 'app/order.service';
 
@@ -9,16 +9,23 @@ import {OrderService} from 'app/order.service';
 })
 export class CurrentOrderComponent implements OnInit {
   @Input() order: Order;
-  constructor(private _orderService: OrderService) { }
+  @Output() orderDone = new EventEmitter();
+  isDisabled: boolean;
+  constructor(private _orderService: OrderService) {
+    this.isDisabled = false;
+  }
 
   ngOnInit() {
   }
 
   add() {
-    if (this.isValid()) {
+    if (this.isComplete()) {
       this.order.date = + new Date();
-      this.order.id = this.order.date;
-      this._orderService.addOrder(this.order);
+      this.isDisabled = true;
+      this._orderService.addOrder(this.order).then((order) => {
+        this.orderDone.emit('orderDone');
+        this.isDisabled = false;
+      });
     }
   }
 
@@ -26,4 +33,7 @@ export class CurrentOrderComponent implements OnInit {
     return this.order.productOrders.length > 0;
   }
 
+  isComplete() {
+    return this.order.productOrders.length > 0 && this.order.place !== '';
+  }
 }

@@ -4,4 +4,5 @@ export interface Order {
     productOrders: Array<ProductOrder>;
     date: number;
     status: number;
+    place: string;
 }

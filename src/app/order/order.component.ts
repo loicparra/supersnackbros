@@ -13,6 +13,10 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
   }
 
+  setPlace(event: any) {
+    this.order.place = event.target.value;
+  }
+
   total() {
     let total = 0;
     this.order.productOrders.forEach(po => total += po.quantity * po.product.price);

@@ -15,7 +15,7 @@ export class ProductsComponent implements OnInit {
   products: Array<Product>;
 
   constructor(private _productService: ProductService) {
-    this.order = { 'id': 0, 'productOrders': [], date: 0, status: OrderStatus.PENDING};
+    this.resetOrder();
     this.products = [];
   }
 
@@ -23,6 +23,10 @@ export class ProductsComponent implements OnInit {
     this._productService.list().subscribe((products) => {
       this.products = products;
     });
+  }
+
+  resetOrder() {
+    this.order = { 'id': null, 'productOrders': [], date: 0, status: OrderStatus.PENDING, place: ''};
   }
 
   getProductOrder(product: Product): number | null {

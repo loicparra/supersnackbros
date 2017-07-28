@@ -1,11 +1,12 @@
 .current-order {
     position: fixed;
-    bottom: -20%;
+    bottom: -50%;
     -webkit-transition: bottom 0.5s;
     -moz-transition: bottom 0.5s;
     -ms-transition: bottom 0.5s;
     -o-transition: bottom 0.5s;
     transition: bottom 0.5s;
+    background-color: #FFFFFF;
 }
 
 .current-order.shown {
