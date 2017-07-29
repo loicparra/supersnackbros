@@ -3,6 +3,7 @@ import {Routes} from '@angular/router';
 import {PendingOrdersComponent} from './pending-orders/pending-orders.component';
 import {HomeComponent} from './home/home.component';
 import {ProductsListComponent} from "./products-list/products-list.component";
+import {TotalComponent} from "app/total/total.component";
 
 export const ROUTES: Routes = [
     {
@@ -20,5 +21,9 @@ export const ROUTES: Routes = [
     {
         path: 'ssb_admin/products',
         component: ProductsListComponent
+    },
+    {
+        path: 'ssb_admin/total',
+        component: TotalComponent
     }
 ];

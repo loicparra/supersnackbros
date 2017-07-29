@@ -4,6 +4,8 @@ import {ProductService} from '../product.service';
 import {Order} from '../models/order.model';
 import {OrderStatus} from '../app.config';
 import {Cookies} from "../models/cookies.class";
+import {Observable} from "rxjs/Observable";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'ssb-products',
@@ -14,28 +16,44 @@ export class ProductsComponent implements OnInit {
 
   order: Order;
   products: Array<Product>;
+  username: string;
+  userid: string;
 
-  constructor(private _productService: ProductService) {
+  constructor(private _productService: ProductService, private router: Router) {
     this.resetOrder();
     this.products = [];
+    const c = new Cookies();
+    this.userid = c.get('userid');
+    this.username = c.get('username');
+
   }
 
   ngOnInit() {
     this._productService.list().subscribe((products) => {
       this.products = products;
     });
+    Observable.interval(2000).subscribe(() => {
+      if (this.username === null) {
+        const c = new Cookies();
+        if (c.get('username') === null) {
+          this.router.navigate(['/']);
+        } else {
+          this.userid = c.get('userid');
+          this.username = c.get('username');
+        }
+      }
+    });
   }
 
   resetOrder() {
-    const c = new Cookies();
     this.order = {
       'id': null,
       'productOrders': [],
       date: 0,
       status: OrderStatus.PENDING,
       place: '',
-      userid: c.get('userid'),
-      username: c.get('username')
+      userid: this.userid,
+      username: this.username
     };
   }
 

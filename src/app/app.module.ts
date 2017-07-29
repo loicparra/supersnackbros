@@ -18,6 +18,7 @@ import { PendingOrdersComponent } from './pending-orders/pending-orders.componen
 import { HomeComponent } from './home/home.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { TotalComponent } from './total/total.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProductFormComponent } from './product-form/product-form.component';
     PendingOrdersComponent,
     HomeComponent,
     ProductsListComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    TotalComponent
   ],
   imports: [
     BrowserModule,
