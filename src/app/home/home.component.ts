@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
     const cookie = new Cookies();
     cookie.set('username', this.name.value);
     cookie.set('userid', Math.floor(Math.random() * 10000));
+    this.router.navigate(['/order']);
   }
 
 }

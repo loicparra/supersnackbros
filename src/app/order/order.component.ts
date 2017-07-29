@@ -17,7 +17,7 @@ export class OrderComponent implements OnInit {
     this.order.place = event.target.value;
   }
 
-  total() {
+  total(): number {
     let total = 0;
     this.order.productOrders.forEach(po => total += po.quantity * po.product.price);
 

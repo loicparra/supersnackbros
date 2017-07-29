@@ -36,7 +36,7 @@ export class PendingOrdersComponent implements OnInit {
     });
   }
 
-  validateOrder(order) {
+  removeOrder(order) {
     const i = this.getOrder(order);
     this.orders.splice(i, 1);
   }

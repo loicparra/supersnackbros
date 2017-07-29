@@ -19,15 +19,15 @@ export class ProductFormComponent implements OnInit {
   }
 
   setStock(event: any) {
-    this.product.stock = event.target.value;
+    this.product.stock = +event.target.value;
   }
 
   setPrice(event: any) {
-    this.product.price = event.target.value;
+    this.product.price = +event.target.value;
   }
 
   setTotalPrice(event: any) {
-    this.product.totalPrice = event.target.value;
+    this.product.totalPrice = +event.target.value;
   }
 
   updateProduct() {

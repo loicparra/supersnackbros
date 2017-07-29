@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Order} from './models/order.model';
 import {Http} from '@angular/http';
-import { Config } from './app.config';
+import {Config, OrderStatus} from './app.config';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
@@ -26,6 +26,11 @@ export class OrderService {
 
   setToFinished(order: Order) {
     return this._http
-        .patch(Config.api_url + '/orders/' + order.id, {'status' : 1});
+        .patch(Config.api_url + '/orders/' + order.id, {'status' : OrderStatus.FINISHED});
+  }
+
+  setToCanceled(order: Order) {
+    return this._http
+        .patch(Config.api_url + '/orders/' + order.id, {'status' : OrderStatus.CANCELED});
   }
 }

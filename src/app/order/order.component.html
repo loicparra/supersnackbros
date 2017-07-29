@@ -1,12 +1,14 @@
 <div>
-  <ssb-product-order *ngFor="let productOrder of order.productOrders" [productOrder]="productOrder"></ssb-product-order>
-  <span class="equal">=</span>
-  <span class="total badge badge-info">
-    {{ total()|number:'1.2-2'}} €
-  </span>
+    <ssb-product-order *ngFor="let productOrder of order.productOrders"
+                       [productOrder]="productOrder"></ssb-product-order>
+    <div>
+        <div class="total">
+            {{ total()|number:'1.2-2'}} €
+        </div>
+    </div>
 </div>
 <div>
-  <label for="orderPlace">Je suis à la télé n°</label>
-  <input value="{{ order.place }}" id="orderPlace"(blur)="setPlace($event)" class="form-control" type="text">
+    <label for="orderPlace">Je suis à la télé n°</label>
+    <input value="{{ order.place }}" id="orderPlace" (blur)="setPlace($event)" class="form-control" type="text">
 </div>
 <br>

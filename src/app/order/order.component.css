@@ -5,5 +5,9 @@
 
 .total {
     font-size: 30px;
-    vertical-align: middle;
+    width: 100%;
+    background-color: #55aaff;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
 }

@@ -4,167 +4,116 @@
       "id": 1,
       "name": "Coca",
       "price": 1,
-      "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png",
-      "stock": "147",
-      "totalPrice": "85.07"
+      "image": "./assets/coca.jpg",
+      "stock": 147,
+      "totalPrice": 85.07
     },
     {
       "id": 2,
       "name": "Ice tea",
-      "price": "1",
-      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
-      "stock": "126",
-      "totalPrice": "28.77"
+      "price": 1,
+      "image": "./assets/ice_tea.png",
+      "stock": 126,
+      "totalPrice": 28.77
     },
     {
       "id": 3,
       "name": "Sprite",
       "price": 1,
-      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
-      "stock": "144",
-      "totalPrice": "26.40"
+      "image": "./assets/sprite.jpg",
+      "stock": 144,
+      "totalPrice": 26.4
     },
     {
       "id": 4,
       "name": "Red bull",
       "price": 2,
-      "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png",
-      "stock": "92",
-      "totalPrice": "51.8"
+      "image": "./assets/redbull.jpg",
+      "stock": 92,
+      "totalPrice": 51.8
     },
     {
       "id": 5,
       "name": "Café",
       "price": 0.5,
-      "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
-      "stock": "100",
-      "totalPrice": "10.84"
+      "image": "./assets/cafe.png",
+      "stock": 100,
+      "totalPrice": 10.84
     },
     {
       "id": 6,
       "name": "Kinder bueno",
-      "price": "1",
-      "image": "",
-      "stock": "252",
-      "totalPrice": "85.07"
+      "price": 1,
+      "image": "./assets/bueno.jpg",
+      "stock": 252,
+      "totalPrice": 85.07
     },
     {
       "id": 7,
       "name": "Kit Kat",
-      "price": "1",
-      "image": "",
-      "stock": "130",
-      "totalPrice": "29.25"
+      "price": 1,
+      "image": "./assets/kitkat.png",
+      "stock": 130,
+      "totalPrice": 29.25
     },
     {
       "id": 8,
       "name": "Snickers ice cream",
-      "price": "1",
-      "image": "",
-      "stock": "126",
-      "totalPrice": "37.94"
+      "price": 1,
+      "image": "./assets/snickers.jpg",
+      "stock": 126,
+      "totalPrice": 37.94
     },
     {
       "id": 9,
       "name": "Pop corn (salt)",
-      "price": "0.5",
-      "image": "",
-      "stock": "0",
+      "price": 0.5,
+      "image": "./assets/popcorn.jpg",
+      "stock": 0,
       "totalPrice": 0
     },
     {
       "id": 10,
       "name": "Pop corn (sugar)",
-      "price": "0.5",
-      "image": "",
+      "price": 0.5,
+      "image": "./assets/popcorn.jpg",
       "stock": 0,
       "totalPrice": 0
     },
     {
       "id": 11,
-      "name": "Hotdog",
-      "price": "3",
-      "image": "",
+      "name": "Hotdog (only)",
+      "price": 3,
+      "image": "./assets/hotdog.jpg",
       "stock": 0,
       "totalPrice": 0
     },
     {
       "id": 12,
-      "name": "",
-      "price": 0,
-      "image": "",
-      "stock": 0,
+      "name": "Frites (only)",
+      "price": 1,
+      "image": "./assets/frites.jpg",
+      "stock": 1,
       "totalPrice": 0
     },
     {
       "id": 13,
-      "name": "Pain au chocolat",
-      "price": "1",
-      "image": "",
+      "name": "Hot-dog Menu",
+      "price": 4,
+      "image": "./assets/menu.jpg",
+      "stock": 0,
+      "totalPrice": 0
+    },
+    {
+      "id": 14,
+      "name": "Breakfast",
+      "price": 2.5,
+      "image": "./assets/dej.jpg",
       "stock": 0,
       "totalPrice": 0
     }
   ],
   "orders": [
-    {
-      "id": 1,
-      "productOrders": [
-        {
-          "product": {
-            "id": 1,
-            "name": "Coca",
-            "price": 1,
-            "image": "http://www.coca-cola-france.fr/content/dam/journey/fr/fr/private/Marques/product-content/coca-cola/coca-cola/coca-cola-original-taste-594x334.png",
-            "stock": "147",
-            "totalPrice": "85.07"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 3,
-            "name": "Sprite",
-            "price": 1,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
-            "stock": "144",
-            "totalPrice": "26.40"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": 4,
-            "name": "Red bull",
-            "price": 2,
-            "image": "http://image.redbull.com/rbx00264/0100/0/406/products/packshots/fr_FR/FR_250_RBED_SingleUnit_closed_cold_front_0.png",
-            "stock": "92",
-            "totalPrice": "51.8"
-          },
-          "quantity": 2
-        }
-      ],
-      "date": 1501275100065,
-      "status": 0,
-      "place": "1"
-    },
-    {
-      "id": 2,
-      "productOrders": [
-        {
-          "product": {
-            "id": 5,
-            "name": "Café",
-            "price": 0.5,
-            "image": "http://www.matsuri.fr/resources/uploads/products/1373975211lipton_ice_tea.jpg",
-            "stock": "100",
-            "totalPrice": "10.84"
-          },
-          "quantity": 13
-        }
-      ],
-      "date": 1501275131165,
-      "status": 0,
-      "place": "5"
-    }
+    
   ]
 }

@@ -1,7 +1,23 @@
 .product-image {
-    height: 200px;
+    height: 100%;
 }
 
 .product-badge {
     font-size: 20px;
+}
+
+.product {
+    height: 30vh;
+    margin-bottom: 10px;
+}
+
+.product .card {
+    height: 100%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }

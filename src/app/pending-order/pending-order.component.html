@@ -1,5 +1,17 @@
-<ssb-order [order]="order"></ssb-order>
 <div>
-  {{ order.date | date: 'dd/MM/yyyy hh:mm' }}
+  <h3>Commande n°{{ order.id }}</h3>
+  <ssb-product-order *ngFor="let productOrder of order.productOrders" [productOrder]="productOrder"></ssb-product-order>
+  <span class="equal">=</span>
+  <span class="total badge badge-info">
+    {{ total()|number:'1.2-2'}} €
+  </span>
 </div>
-<button type="button" (click)="validate()">Valider la commande</button>
+<div>
+  Commandé par <b>{{ order.username }}</b>#{{ order.userid }}, à la télé n°<b>{{ order.place }}</b>
+</div>
+<div>
+  Date de la commande : {{ order.date | date: 'dd/MM/yyyy hh:mm' }}
+</div>
+<button class="btn btn-success" type="button" (click)="validate()">Valider la commande</button>
+<button class="btn btn-danger" type="button" (click)="cancel()">Annuler la commande</button>
+<hr>

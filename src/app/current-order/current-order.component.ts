@@ -25,6 +25,7 @@ export class CurrentOrderComponent implements OnInit {
       this._orderService.addOrder(this.order).then((order) => {
         this.orderDone.emit('orderDone');
         this.isDisabled = false;
+        alert('Your order has been sent ! You have the order n°' + order.json().id);
       });
     }
   }

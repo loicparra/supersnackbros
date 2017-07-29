@@ -10,7 +10,7 @@ import {OrderStatus} from '../app.config';
 })
 export class PendingOrderComponent implements OnInit {
     @Input() order: Order;
-    @Output() validation = new EventEmitter();
+    @Output() remove = new EventEmitter();
 
     constructor(private _orderService: OrderService) { }
 
@@ -21,8 +21,22 @@ export class PendingOrderComponent implements OnInit {
         this._orderService.setToFinished(this.order)
             .subscribe(() => {
                 this.order.status = OrderStatus.FINISHED;
-                this.validation.emit(this.order);
+                this.remove.emit(this.order);
             });
     }
 
+    cancel() {
+        this._orderService.setToCanceled(this.order)
+            .subscribe(() => {
+                this.order.status = OrderStatus.CANCELED;
+                this.remove.emit(this.order);
+            });
+    }
+
+    total(): number {
+        let total = 0;
+        this.order.productOrders.forEach(po => total += po.quantity * po.product.price);
+
+        return total;
+    }
 }

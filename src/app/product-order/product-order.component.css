@@ -12,6 +12,10 @@ img {
     vertical-align: middle;
 }
 
+.badge-container {
+    overflow: hidden;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

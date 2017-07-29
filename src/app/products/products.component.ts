@@ -3,6 +3,7 @@ import {Product} from '../models/product.model';
 import {ProductService} from '../product.service';
 import {Order} from '../models/order.model';
 import {OrderStatus} from '../app.config';
+import {Cookies} from "../models/cookies.class";
 
 @Component({
   selector: 'ssb-products',
@@ -26,7 +27,16 @@ export class ProductsComponent implements OnInit {
   }
 
   resetOrder() {
-    this.order = { 'id': null, 'productOrders': [], date: 0, status: OrderStatus.PENDING, place: ''};
+    const c = new Cookies();
+    this.order = {
+      'id': null,
+      'productOrders': [],
+      date: 0,
+      status: OrderStatus.PENDING,
+      place: '',
+      userid: c.get('userid'),
+      username: c.get('username')
+    };
   }
 
   getProductOrder(product: Product): number | null {

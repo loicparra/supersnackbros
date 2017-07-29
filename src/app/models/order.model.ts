@@ -5,4 +5,6 @@ export interface Order {
     date: number;
     status: number;
     place: string;
+    userid: string;
+    username: string;
 }
