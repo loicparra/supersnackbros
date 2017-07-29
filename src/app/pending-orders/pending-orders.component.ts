@@ -27,11 +27,10 @@ export class PendingOrdersComponent implements OnInit {
     const checkDate = + new Date();
     this._orderService.list(
         {
-          'date_gte': this.lastCheckedTimestamp,
           '_sort': 'date', '_order': 'asc', 'status': OrderStatus.PENDING
         }
     ).subscribe((pr) => {
-      this.orders = this.orders.concat(pr);
+      this.orders = pr;
       this.lastCheckedTimestamp = checkDate;
     });
   }
